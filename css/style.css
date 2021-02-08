@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap');
+
+.main {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.intro {
+  background-color: #000316;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.intro__portrait {
+  position: relative;
+  width: 40%;
+  height: 100%;
+}
+
+.intro__img {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: auto;
+  height: 100%;
+  transform: translateX(-50%);
+  transition: 0.8s;
+}
+
+.intro__img1 {
+  
+}
+
+.intro__img2 {
+  left: 30%;
+  bottom: -80px;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.intro__portrait:hover .intro__img1 {
+  opacity: 0;
+}
+
+.intro__portrait:hover .intro__img2 {
+  opacity: 1;
+  visibility: visible;
+}
+
+
+.intro__desc {
+  font-family: 'East Sea Dokdo', cursive;
+  position: relative;
+  align-self: flex-end;
+  margin: 0 0 10% 5%;
+  color: #fff;
+  text-align: center;
+
+}
+
+.intro__sub-title {
+  font-size: 58px;
+  line-height: 0.95;
+  text-shadow: 3px 3px #253544;
+}
+
+.intro__sub-title strong {
+  color: #d80025;
+  font-size: 65px;
+}
+
+.intro__title {
+  color: #e9d26d;
+  font-size: 180px;
+  text-shadow: 5px 5px #1c436b;
+}
+
+.intro__btn-history {
+  display: block;
+  font-size: 38px;
+  text-align: right;
+}
